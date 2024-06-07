@@ -1,17 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="12" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T10:33:44 ICT" name="Default suite" finished-at="2024-06-03T10:33:44 ICT" duration-ms="54">
+  <suite started-at="2024-06-07T15:49:44 ICT" name="Loan Apartment" finished-at="2024-06-07T15:49:44 ICT" duration-ms="101">
     <groups>
     </groups>
-    <test started-at="2024-06-03T10:33:44 ICT" name="Default test" finished-at="2024-06-03T10:33:44 ICT" duration-ms="54">
-      <class name="StreamsLearning">
-        <test-method signature="streamCollect()[pri:0, instance:StreamsLearning@73e9cf30]" started-at="2024-06-03T10:33:44 ICT" name="streamCollect" finished-at="2024-06-03T10:33:44 ICT" duration-ms="10" status="PASS">
+    <test started-at="2024-06-07T15:49:44 ICT" name="Test 1 + Car loan" finished-at="2024-06-07T15:49:44 ICT" duration-ms="45">
+      <class name="testNG.testNG1">
+        <test-method is-config="true" signature="Demo(java.lang.String)[pri:0, instance:testNG.testNG1@4b0d79fc]" started-at="2024-06-07T15:49:44 ICT" name="Demo" finished-at="2024-06-07T15:49:44 ICT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[squarefeet.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- streamCollect -->
-      </class> <!-- StreamsLearning -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Demo -->
+        <test-method is-config="true" signature="befoClass()[pri:0, instance:testNG.testNG1@4b0d79fc]" started-at="2024-06-07T15:49:44 ICT" name="befoClass" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befoClass -->
+        <test-method signature="Demo2()[pri:0, instance:testNG.testNG1@4b0d79fc]" started-at="2024-06-07T15:49:44 ICT" name="Demo2" finished-at="2024-06-07T15:49:44 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo2 -->
+        <test-method is-config="true" signature="AftClass()[pri:0, instance:testNG.testNG1@4b0d79fc]" started-at="2024-06-07T15:49:44 ICT" name="AftClass" finished-at="2024-06-07T15:49:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AftClass -->
+        <test-method is-config="true" signature="PersonalLoan1()[pri:0, instance:testNG.testNG1@4b0d79fc]" started-at="2024-06-07T15:49:44 ICT" name="PersonalLoan1" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalLoan1 -->
+      </class> <!-- testNG.testNG1 -->
+      <class name="testNG.Step2">
+        <test-method is-config="true" signature="BeforeEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="BeforeEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEveryMethod -->
+        <test-method signature="LoginAPICarLoan()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="LoginAPICarLoan" finished-at="2024-06-07T15:49:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICarLoan -->
+        <test-method is-config="true" signature="AfterEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="AfterEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEveryMethod -->
+        <test-method signature="WebLoginCarLoan()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="WebLoginCarLoan" finished-at="2024-06-07T15:49:44 ICT" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testNG.Step2.WebLoginCarLoan(Step2.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method is-config="true" signature="BeforeEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="BeforeEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEveryMethod -->
+        <test-method is-config="true" signature="AfterEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="AfterEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEveryMethod -->
+        <test-method is-config="true" signature="BeforeEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="BeforeEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEveryMethod -->
+        <test-method signature="WhatAppSignoutCarLoan(java.lang.String,java.lang.String)[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="WhatAppSignoutCarLoan" data-provider="getData" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1stUserpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WhatAppSignoutCarLoan -->
+        <test-method is-config="true" signature="AfterEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="AfterEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEveryMethod -->
+        <test-method is-config="true" signature="BeforeEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="BeforeEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEveryMethod -->
+        <test-method signature="WhatAppSignoutCarLoan(java.lang.String,java.lang.String)[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="WhatAppSignoutCarLoan" data-provider="getData" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2ndUserpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WhatAppSignoutCarLoan -->
+        <test-method is-config="true" signature="AfterEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="AfterEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEveryMethod -->
+        <test-method signature="WhatAppSignoutCarLoan(java.lang.String,java.lang.String)[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="WhatAppSignoutCarLoan" data-provider="getData" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3rdUserpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WhatAppSignoutCarLoan -->
+        <test-method is-config="true" signature="AfterEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="AfterEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEveryMethod -->
+        <test-method is-config="true" signature="BeforeEveryMethod()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="BeforeEveryMethod" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEveryMethod -->
+      </class> <!-- testNG.Step2 -->
+    </test> <!-- Test 1 + Car loan -->
+    <test started-at="2024-06-07T15:49:44 ICT" name="Test 3 - Home loan" finished-at="2024-06-07T15:49:44 ICT" duration-ms="3">
+      <class name="testNG.Step3">
+        <test-method signature="LoginAPIHomeLoan(java.lang.String,java.lang.String)[pri:0, instance:testNG.Step3@2ddc9a9f]" started-at="2024-06-07T15:49:44 ICT" name="LoginAPIHomeLoan" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[homeloan.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIHomeLoan -->
+        <test-method signature="WebLoginHomeLoan()[pri:0, instance:testNG.Step3@2ddc9a9f]" started-at="2024-06-07T15:49:44 ICT" name="WebLoginHomeLoan" finished-at="2024-06-07T15:49:44 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHomeLoan -->
+      </class> <!-- testNG.Step3 -->
+      <class name="testNG.testNG1">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:testNG.testNG1@4b0d79fc]" started-at="2024-06-07T15:49:44 ICT" name="AfterSuite" finished-at="2024-06-07T15:49:44 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- testNG.testNG1 -->
+      <class name="testNG.Step2">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:testNG.Step2@48aca48b]" started-at="2024-06-07T15:49:44 ICT" name="BeforeSuite" finished-at="2024-06-07T15:49:44 ICT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+      </class> <!-- testNG.Step2 -->
+    </test> <!-- Test 3 - Home loan -->
+  </suite> <!-- Loan Apartment -->
 </testng-results>

@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +21,12 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Loan_Apartment" class="navigator-link">
+              <span class="suite-name border-failed">Loan Apartment</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\hoang.leviet\AppData\Local\Temp\testng-eclipse--570523929\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Loan_Apartment" class="navigator-link ">
+                    <span>C:\Users\hoang.leviet\git\repository\JavaSeleniumProject\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Loan_Apartment" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Loan_Apartment" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Loan_Apartment" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Loan_Apartment" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Loan_Apartment" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Loan_Apartment" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +93,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Loan_Apartment" class="hide-methods failed suite-Loan_Apartment"> (hide)</a> <!-- hide-methods failed suite-Loan_Apartment -->
+                      <a href="#" panel-name="suite-Loan_Apartment" class="show-methods failed suite-Loan_Apartment"> (show)</a> <!-- show-methods failed suite-Loan_Apartment -->
+                    </span>
+                    <div class="method-list-content failed suite-Loan_Apartment">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.Step2" class="method navigator-link" hash-for-method="WebLoginCarLoan">WebLoginCarLoan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Loan_Apartment -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Loan_Apartment" class="hide-methods passed suite-Loan_Apartment"> (hide)</a> <!-- hide-methods passed suite-Loan_Apartment -->
+                      <a href="#" panel-name="suite-Loan_Apartment" class="show-methods passed suite-Loan_Apartment"> (show)</a> <!-- show-methods passed suite-Loan_Apartment -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Loan_Apartment">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="StreamsLearning" class="method navigator-link" hash-for-method="streamCollect">streamCollect</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.testNG1" class="method navigator-link" hash-for-method="Demo2">Demo2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.Step2" class="method navigator-link" hash-for-method="LoginAPICarLoan">LoginAPICarLoan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.Step3" class="method navigator-link" hash-for-method="LoginAPIHomeLoan(homeloan.com, 123123)">LoginAPIHomeLoan(homeloan.com, 123123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.Step3" class="method navigator-link" hash-for-method="WebLoginHomeLoan">WebLoginHomeLoan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.Step2" class="method navigator-link" hash-for-method="WhatAppSignoutCarLoan(firstusername, 1stUserpassword)">WhatAppSignoutCarLoan(firstusername, 1stUserpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.Step2" class="method navigator-link" hash-for-method="WhatAppSignoutCarLoan(secondusername, 2ndUserpassword)">WhatAppSignoutCarLoan(secondusername, 2ndUserpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Loan_Apartment" title="testNG.Step2" class="method navigator-link" hash-for-method="WhatAppSignoutCarLoan(thirdusername, 3rdUserpassword)">WhatAppSignoutCarLoan(thirdusername, 3rdUserpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Loan_Apartment -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,114 +162,375 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Loan_Apartment" class="panel Loan_Apartment">
+          <div class="suite-Loan_Apartment-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">StreamsLearning</span>
+              <img src="failed.png"/>
+              <span class="class-name">testNG.Step2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="streamCollect">
-                  </a> <!-- streamCollect -->
-                  <span class="method-name">streamCollect</span>
+                  <a name="WebLoginCarLoan">
+                  </a> <!-- WebLoginCarLoan -->
+                  <span class="method-name">WebLoginCarLoan</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testNG.Step2.WebLoginCarLoan(Step2.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Loan_Apartment-class-failed -->
+          <div class="suite-Loan_Apartment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNG.Step2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginAPICarLoan">
+                  </a> <!-- LoginAPICarLoan -->
+                  <span class="method-name">LoginAPICarLoan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WhatAppSignoutCarLoan(firstusername, 1stUserpassword)">
+                  </a> <!-- WhatAppSignoutCarLoan(firstusername, 1stUserpassword) -->
+                  <span class="method-name">WhatAppSignoutCarLoan</span>
+                  <span class="parameters">(firstusername, 1stUserpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WhatAppSignoutCarLoan(secondusername, 2ndUserpassword)">
+                  </a> <!-- WhatAppSignoutCarLoan(secondusername, 2ndUserpassword) -->
+                  <span class="method-name">WhatAppSignoutCarLoan</span>
+                  <span class="parameters">(secondusername, 2ndUserpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WhatAppSignoutCarLoan(thirdusername, 3rdUserpassword)">
+                  </a> <!-- WhatAppSignoutCarLoan(thirdusername, 3rdUserpassword) -->
+                  <span class="method-name">WhatAppSignoutCarLoan</span>
+                  <span class="parameters">(thirdusername, 3rdUserpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Apartment-class-passed -->
+          <div class="suite-Loan_Apartment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNG.testNG1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Demo2">
+                  </a> <!-- Demo2 -->
+                  <span class="method-name">Demo2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Apartment-class-passed -->
+          <div class="suite-Loan_Apartment-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNG.Step3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginAPIHomeLoan(homeloan.com, 123123)">
+                  </a> <!-- LoginAPIHomeLoan(homeloan.com, 123123) -->
+                  <span class="method-name">LoginAPIHomeLoan</span>
+                  <span class="parameters">(homeloan.com, 123123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WebLoginHomeLoan">
+                  </a> <!-- WebLoginHomeLoan -->
+                  <span class="method-name">WebLoginHomeLoan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Apartment-class-passed -->
+        </div> <!-- panel Loan_Apartment -->
+        <div panel-name="test-xml-Loan_Apartment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hoang.leviet\AppData\Local\Temp\testng-eclipse--570523929\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\hoang.leviet\git\repository\JavaSeleniumProject\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Loan Apartment&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;URL&quot; value=&quot;qaclickacademy.com&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testNG.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test 1 + Car loan&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;squarefeet.com&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;StreamsLearning&quot;/&gt;
+      &lt;class name=&quot;testNG.testNG1&quot;/&gt;
+      &lt;class name=&quot;testNG.Step2&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;App.*&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testNG.Step2 --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test 1 + Car loan --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test 3 - Home loan&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;homeloan.com&quot;/&gt;
+    &lt;parameter name=&quot;key&quot; value=&quot;123123&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testNG.Step3&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;AppLoginHomeLoan&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testNG.Step3 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test 3 - Home loan --&gt;
+&lt;/suite&gt; &lt;!-- Loan Apartment --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Loan_Apartment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Loan Apartment</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test 1 + Car loan (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test 3 - Home loan (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Loan_Apartment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Loan Apartment</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Loan_Apartment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Loan Apartment</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Loan_Apartment');
+function tableData_Loan_Apartment() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'streamCollect')
-data.setCell(0, 2, 'StreamsLearning')
-data.setCell(0, 3, 10);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'Demo2')
+data.setCell(0, 2, 'testNG.testNG1')
+data.setCell(0, 3, 4);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'WebLoginCarLoan')
+data.setCell(1, 2, 'testNG.Step2')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginAPICarLoan')
+data.setCell(2, 2, 'testNG.Step2')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'WebLoginHomeLoan')
+data.setCell(3, 2, 'testNG.Step3')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'WhatAppSignoutCarLoan')
+data.setCell(4, 2, 'testNG.Step2')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'WhatAppSignoutCarLoan')
+data.setCell(5, 2, 'testNG.Step2')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'WhatAppSignoutCarLoan')
+data.setCell(6, 2, 'testNG.Step2')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'LoginAPIHomeLoan')
+data.setCell(7, 2, 'testNG.Step3')
+data.setCell(7, 3, 0);
+window.suiteTableData['Loan_Apartment']= { tableData: data, tableDiv: 'times-div-Loan_Apartment'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 9 ms</span>
+              <div id="times-div-Loan_Apartment">
+              </div> <!-- times-div-Loan_Apartment -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Loan_Apartment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Loan Apartment</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Loan_Apartment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testNG.Step2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">AppLoginCarLoan</span>
+                <br/>
+                <span class="ignored-method-name">AppLogoutCarLoan</span>
+                <br/>
+                <span class="ignored-method-name">AppSigninCarLoan</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testNG.Step3</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">AppLoginHomeLoan</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Loan_Apartment" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">StreamsLearning</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">streamCollect</span>
+              <div class="chronological-class-name">testNG.Step2</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">BeforeSuite</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.testNG1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Demo(squarefeet.com)</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">befoClass</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Demo2</span>
+                <span class="method-start">30 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">AftClass</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.Step2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEveryMethod</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginAPICarLoan</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterEveryMethod</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WebLoginCarLoan</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEveryMethod</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterEveryMethod</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEveryMethod</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WhatAppSignoutCarLoan(firstusername, 1stUserpassword)</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterEveryMethod</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEveryMethod</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WhatAppSignoutCarLoan(secondusername, 2ndUserpassword)</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterEveryMethod</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">WhatAppSignoutCarLoan(thirdusername, 3rdUserpassword)</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterEveryMethod</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEveryMethod</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.testNG1</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">PersonalLoan1</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.Step3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoginAPIHomeLoan(homeloan.com, 123123)</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">WebLoginHomeLoan</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.testNG1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">AfterSuite</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

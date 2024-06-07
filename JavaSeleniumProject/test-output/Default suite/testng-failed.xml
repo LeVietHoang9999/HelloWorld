@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="StreamsLearning">
+      <class name="testNG.Step3">
         <methods>
-          <include name="streamMap"/>
+          <include name="LoginAPIHomeLoan"/>
         </methods>
-      </class> <!-- StreamsLearning -->
+      </class> <!-- testNG.Step3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

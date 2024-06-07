@@ -8,11 +8,24 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54</td><td></td><td></td></tr>
+<tr><th colspan="8">Loan Apartment</th></tr>
+<tr><td><a href="#t0">Test 1 + Car loan</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">45</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test 3 - Home loan</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">48</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">StreamsLearning</td><td><a href="#m0">streamCollect</a></td><td rowspan="1">1717385624525</td><td rowspan="1">10</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Loan Apartment</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test 1 + Car loan &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testNG.Step2</td><td><a href="#m0">WebLoginCarLoan</a></td><td rowspan="1">1717750184910</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test 1 + Car loan &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testNG.Step2</td><td><a href="#m1">LoginAPICarLoan</a></td><td rowspan="1">1717750184908</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m2">WhatAppSignoutCarLoan</a></td><td rowspan="3">1717750184917</td><td rowspan="3">0</td></tr><tr class="passedeven"><td><a href="#m3">WhatAppSignoutCarLoan</a></td></tr><tr class="passedeven"><td><a href="#m4">WhatAppSignoutCarLoan</a></td></tr><tr class="passedodd"><td rowspan="1">testNG.testNG1</td><td><a href="#m5">Demo2</a></td><td rowspan="1">1717750184898</td><td rowspan="1">4</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test 3 - Home loan &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testNG.Step3</td><td><a href="#m6">LoginAPIHomeLoan</a></td><td rowspan="1">1717750184975</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m7">WebLoginHomeLoan</a></td><td rowspan="1">1717750184976</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">StreamsLearning#streamCollect</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test 1 + Car loan</h2><h3 id="m0">testNG.Step2#WebLoginCarLoan</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at testNG.Step2.WebLoginCarLoan(Step2.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testNG.Step2#LoginAPICarLoan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testNG.Step2#WhatAppSignoutCarLoan</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>firstusername</td><td>1stUserpassword</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testNG.Step2#WhatAppSignoutCarLoan</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>secondusername</td><td>2ndUserpassword</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testNG.Step2#WhatAppSignoutCarLoan</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>thirdusername</td><td>3rdUserpassword</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testNG.testNG1#Demo2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test 3 - Home loan</h2><h3 id="m6">testNG.Step3#LoginAPIHomeLoan</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>homeloan.com</td><td>123123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testNG.Step3#WebLoginHomeLoan</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
