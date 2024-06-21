@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="submitOrder"/>
+		</run>
+	</groups>
+  <test thread-count="5" name="Submit Order Test"><!-- Thread count = 5 means there are 5 methods are allowed to run-->
+    <classes>
+      <class name="amazon.tests.StandAloneTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Error validation Test">
+    <classes>
+      <class name="amazon.tests.ErrorValidationsTest"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
