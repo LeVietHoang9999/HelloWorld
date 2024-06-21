@@ -1,85 +1,85 @@
 package amazon.tests;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import amazon.TestComponents.BaseTest;
 import amazon.pageobjects.CartPage;
 import amazon.pageobjects.CheckoutPage;
 import amazon.pageobjects.ConfirmationPage;
-import amazon.pageobjects.LandingPage;
+import amazon.pageobjects.OrderPage;
 import amazon.pageobjects.ProductCatalogue;
 
-import java.time.Duration;
-import java.util.List;
+public class StandAloneTest extends BaseTest {
 
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class StandAloneTest {
-	@FindBy(css="[routerlink*='cart']")
+	//String productName = "ZARA COAT 3";
+	@FindBy(css = "[routerlink*='cart']")
 	WebElement cartHeader;
-	public static void main(String[] args) {
-		String productName = "ZARA COAT 3";
+
+	@Test(dataProvider="getData", groups= {"Purchase"},priority=1)
+	public void submitOrder(HashMap<String, String> input) throws IOException {
+
 		// TODO Auto-generated method stub
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
-        LandingPage landingPage = new LandingPage(driver);//Good
-		landingPage.goTo();//Good
-		ProductCatalogue productCatalogue= landingPage.loginApplication("anshika@gmail.com", "Iamking@000");//Good
-		//ProductCatalogue productCatalogue = new ProductCatalogue(driver);//Good
-		List<WebElement> products = productCatalogue.getProductList();//Good
-		productCatalogue.addProductToCart(productName);//Good
-		
-		//ProductCatalogue.waitForElementToAppear(cartHeader);
+		// LandingPage landingPage = launchApplication();
+		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));// Good
+		List<WebElement> products = productCatalogue.getProductList();// Good
+		productCatalogue.addProductToCart(input.get("product"));// Good
 		CartPage cartPage = productCatalogue.goToCartPage();
 		
-		
-		//cach de han che khai bao nhieu object ...
-		Boolean match = cartPage.VerifyProductDisplay(productName);//zara coat 3
-		
-		//Su dung CartPage de xu li doan code nay
-		
- 		Assert.assertTrue(match);
-		System.out.println(match);
+		Boolean match = cartPage.VerifyProductDisplay(input.get("product"));// zara coat 3
+		Assert.assertTrue(match);
 		CheckoutPage checkoutPage = cartPage.gotoCheckout();
 		checkoutPage.selectCountry();
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
-		//CheckoutPage + ConfirmationMessage: 
 		String confirmMessage = confirmationPage.VerifyConfirmationMessage();
-		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));		
+		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		System.out.println("Run the test successfully");
-		//Nhờ có Inheritance nên code rất rõ ràng, mọi người có thể đọc và hiểu 1 cách dễ dàng...
-		
-		
-		//		driver.findElement(By.cssSelector("div[class*='subtotal'] ul li button")).click();//bam vao nut submit de sang trang info (Country...)
-//		
-//		
-//		
-//		
-//		Actions a = new Actions(driver);
-//		a.sendKeys(driver.findElement(By.xpath("//input[@placeholder='Select Country']")),"india").build().perform();//Good
-//		
-//		productCatalogue.waitForElementToAppear(By.cssSelector("section[class*='ta-result']"));//india finding pop-up
-//		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("section[class*='ta-result']")));
-//		driver.findElement(By.cssSelector(".ta-results .ta-item:last-child")).click();
-//		driver.findElement(By.cssSelector("a[class*='btnn']")).click(); //chuan bi sang trang bill
-//		
-//		String header = driver.findElement(By.cssSelector(".hero-primary")).getText();
-		
-		
-		//assertTrue(header.equalsIgnoreCase("THANKYOU FOR THE ORDER."));//equalsIgnoreCase la loai bo ca upperCase va lowerCase
-		//System.out.println(header.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
-		//driver.close();
-		
+
 	}
 
+	
+	@Test(dataProvider="getData",groups= {"submitOrder"},priority=2)// Good (V)
+	public void OrderHistoryTest(HashMap<String, String> input) {
+		// ZARA COAT 3
+		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));// Good
+		OrderPage orderPage = productCatalogue.goToOrderPage();
+		Assert.assertTrue(orderPage.VerifyOrderDisplay(input.get("product")));
+	} 
+	
+//	public String getScreenshot(String testCaseName) throws IOException {
+//		TakesScreenshot ts = (TakesScreenshot)driver;
+//		File source = ts.getScreenshotAs(OutputType.FILE);
+//		File file = new File(System.getProperty("user.dir")+"//reports//"+testCaseName+".png");
+//		FileUtils.copyFile(source,file);
+//		return System.getProperty("user.dir")+"//reports//"+testCaseName+".png";
+//	}
+	
+	@DataProvider
+	public Object[][] getData() throws IOException {
+//		HashMap<String, String> map = new HashMap<String, String>();
+//		map.put("email", "ashika@gmail.com");
+//		map.put("password", "Iamking@000");
+//		map.put("product", "ZARA COAT 3");
+//		
+//		
+//		HashMap<String, String> map1 = new HashMap<String, String>();
+//		map1.put("email", "shetty@gmail.com");
+//		map1.put("password", "Iamking@000");
+//		map1.put("product", "ADIDAS ORIGINAL");
+		
+		List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir")+"//src//test//java//amazon//data//PurchaseOrder.json");
+		return new Object[][] {{data.get(0)},{data.get(1)}};// 2 dimension syntax. Object is the parent (Integer, double, string, float)
+		//2 sets
+	}
 }

@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import amazon.pageobjects.CartPage;
+import amazon.pageobjects.OrderPage;
 
 public class AbstractComponent {//Which can be used by all page objects files with the command header
 	WebDriver driver;
@@ -21,18 +22,32 @@ public class AbstractComponent {//Which can be used by all page objects files wi
 	//driver.findElement(By.xpath("//button[@routerlink='/dashboard/cart']")).click();
 	@FindBy(css="[routerlink*='cart']")
 	WebElement cartHeader;
+	@FindBy(css="[routerlink*='myorders']")
+	WebElement orderHeader;
 	By wait_cartHeader = By.cssSelector("[routerlink*='cart']");
 	public void waitForElementToAppear(By findBy) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
 		 
-	}
+	} 
+	public void waitForWebElementToAppear(WebElement findBy) throws InterruptedException {
+		Thread.sleep(1000);
+		//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//		wait.until(ExpectedConditions.visibilityOf(findBy));
+		 
+	} 
 	public CartPage goToCartPage() {
 		//By wait_cartHeader = By.cssSelector("section[class*='ta-result']");
 		waitForElementToAppear(wait_cartHeader);
 		cartHeader.click();
 		CartPage cartPage = new CartPage(driver);
 		return cartPage;
+	}
+	public OrderPage goToOrderPage() {
+		
+		orderHeader.click();
+		OrderPage orderPage = new OrderPage(driver);
+		return orderPage;
 	}
 	
 	public void waitForElementToDisappear(WebElement ele) {

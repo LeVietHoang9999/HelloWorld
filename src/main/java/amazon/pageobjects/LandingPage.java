@@ -22,7 +22,9 @@ public class LandingPage extends AbstractComponent {
 	WebElement passwordEle;
 	@FindBy(css="input[type='submit']")
 	WebElement submit;
-
+	@FindBy(css="div[class*='ng-trigger-flyInOut']")
+	WebElement errorMessage;
+//<div class="ng-tns-c4-7 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-error ng-animating" toast-component="" style="" xpath="1"><!----><!----><!----><div role="alert" class="ng-tns-c4-7 toast-message ng-star-inserted" aria-label="Incorrect email or password." style=""> Incorrect email or password. </div><!----><!----></div>
 	public ProductCatalogue loginApplication(String email,String password) {//Action method. 
 		userEmail.sendKeys(email);
 		passwordEle.sendKeys(password);
@@ -31,6 +33,11 @@ public class LandingPage extends AbstractComponent {
 		return productCatalogue;
 
 	}
+	public String getErrorMessage() throws InterruptedException {
+		waitForWebElementToAppear(errorMessage);
+		return errorMessage.getText();
+	}
+	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client");
 	}
